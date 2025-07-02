@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión - Bird-Fit</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
+                    <img src="images/logo.jpg" alt="Logotipo Bird-Fit" class="logo">
+                    <div class="business-info">
+                        <h1>Bird-Fit</h1>
+                        <p class="slogan">Vuela hacia tu mejor versión</p>
+                    </div>
+                </div>
+                <div class="auth-section">
+                    <a href="registro.html" class="auth-link">Registro/Inicio Sesión</a>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="datos-politicas.html">Datos y Políticas</a></li>
+                    <li><a href="imc.html">Calculadora IMC</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="auth" class="section">
+                <h2>Registro e Inicio de Sesión</h2>
+                <div class="auth-container">
+                    <div class="auth-form">
+                        <h3>Regístrate</h3>
+                        <form id="register-form">
+                            <label for="register-name">Nombre:</label>
+                            <input type="text" id="register-name" name="name" required>
+                            <label for="register-email">Correo Electrónico:</label>
+                            <input type="email" id="register-email" name="email" required>
+                            <label for="register-password">Contraseña:</label>
+                            <input type="password" id="register-password" name="password" required>
+                            <button type="submit" class="cta-button">Registrar</button>
+                        </form>
+                    </div>
+                    <div class="auth-form">
+                        <h3>Inicia Sesión</h3>
+                        <form id="login-form">
+                            <label for="login-email">Correo Electrónico:</label>
+                            <input type="email" id="login-email" name="email" required>
+                            <label for="login-password">Contraseña:</label>
+                            <input type="password" id="login-password" name="password" required>
+                            <button type="submit" class="cta-button">Iniciar Sesión</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="auth-message" class="auth-message"></div>
+            </section>
+        </main>
+        <a href="carrito.html" class="cart-button">🛒</a>
+    </div>
+    <div id="promo-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup" class="close">×</span>
+            <h2>¡Oferta Especial!</h2>
+            <p>Regístrate hoy y obtén un <strong>20% de descuento</strong> en tu primer plan de nutrición personalizado.</p>
+            <a href="registro.html" class="cta-button">¡Aprovecha Ahora!</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Información de Contacto</h3>
+                <p>Email: info@bird-fit.com</p>
+                <p>Teléfono: +1-555-123-4567</p>
+                <p>Dirección: 123 Calle Salud, Ciudad Fitness</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Útiles</h3>
+                <a href="datos-politicas.html#privacidad">Políticas de Privacidad</a> | <a href="datos-politicas.html#terminos">Términos y Condiciones</a> | <a href="datos-politicas.html">Datos y Políticas</a>
+            </div>
+            <div class="footer-section">
+                <p>© 2025 Bird-Fit. Todos los derechos reservados.</p>
+                <p>Desarrollado con ❤️ por nuestro equipo.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

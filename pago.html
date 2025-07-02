@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Bird-Fit</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://www.paypal.com/sdk/js?client-id=Act3AxzLQ-Ls-Tt5fmVPpYZ3teQ5CpHDPqQis-O94uUKrJXujrqNP320uxjGzZmP3Q5gLy6Q_Kd2XAKJ&currency=USD"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
+                    <img src="images/logo.jpg" alt="Logotipo Bird-Fit" class="logo">
+                    <div class="business-info">
+                        <h1>Bird-Fit</h1>
+                        <p class="slogan">Vuela hacia tu mejor versión</p>
+                    </div>
+                </div>
+                <div class="auth-section">
+                    <form class="search-form" id="search-form">
+                        <input type="text" class="search-input" placeholder="Buscar productos..." aria-label="Buscar productos">
+                        <button type="submit" class="search-button">🔍</button>
+                    </form>
+                    <a href="registro.html" class="auth-link">Registro/Inicio Sesión</a>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="datos-politicas.html">Datos y Políticas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="imc.html">Calculadora IMC</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="payment-hero" class="hero">
+                <div class="hero-content">
+                    <h2>Finaliza tu Compra</h2>
+                    <p>Revisa tu pedido y procede con el pago seguro.</p>
+                    <a href="carrito.html" class="cta-button">Volver al Carrito</a>
+                </div>
+            </section>
+            <section id="payment" class="section">
+                <h2>Resumen del Pedido</h2>
+                <div id="cartSummary" class="cart-container"></div>
+                <p class="total" id="totalAmount">Total a pagar: $0.00</p>
+                <div id="paypal-button-container"></div>
+                <div id="payment-error" style="display: none; margin-top: 20px; text-align: center; color: #FF0000;">
+                    <p>Error al cargar el sistema de pago. Por favor, intenta de nuevo más tarde.</p>
+                </div>
+                <div id="payment-success" style="display: none; margin-top: 20px; text-align: center;">
+                    <h3>¡Pago Exitoso!</h3>
+                    <p>Gracias por tu compra. Recibirás una confirmación pronto.</p>
+                    <a href="productos.html" class="cta-button">Volver a Productos</a>
+                </div>
+            </section>
+        </main>
+        <a href="carrito.html" class="cart-button">🛒<span id="cart-count" class="cart-count">0</span></a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Información de Contacto</h3>
+                <p>Email: info@bird-fit.com</p>
+                <p>Teléfono: +1-555-123-4567</p>
+                <p>Dirección: 123 Calle Salud, Ciudad Fitness</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Útiles</h3>
+                <a href="datos-politicas.html#privacidad">Políticas de Privacidad</a> | <a href="datos-politicas.html#terminos">Términos y Condiciones</a> | <a href="datos-politicas.html">Datos y Políticas</a>
+            </div>
+            <div class="footer-section footer-social">
+                <h3>Síguenos</h3>
+                <a href="https://www.facebook.com/" target="_blank" class="social-button">
+                    <img src="https://simpleicons.org/icons/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-button">
+                    <img src="https://simpleicons.org/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.x.com/" target="_blank" class="social-button">
+                    <img src="https://simpleicons.org/icons/x.svg" alt="X">
+                </a>
+            </div>
+            <div class="footer-section">
+                <p>© 2025 Bird-Fit. Todos los derechos reservados.</p>
+                <p>Desarrollado con ❤️ por nuestro equipo.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
